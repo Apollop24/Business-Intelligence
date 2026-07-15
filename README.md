@@ -1,4 +1,92 @@
-# Medical Center Analysis
+# PROJECCT 1: Nairobi Women's Hospital — Outpatient Billing Dashboard
+
+A Power BI dashboard built from outpatient billing records. It shows revenue, patient demographics, clinic and scheme performance, and branch performance in one place.
+<img width="790" height="519" alt="image" src="https://github.com/user-attachments/assets/9f7c3bfa-6848-4037-be41-bf3beb852184" />
+
+## What it answers
+
+- How much revenue is coming in, and where is it coming from?
+- Who are the patients, and what do they look like by age and clinic?
+- How do clinics and insurance schemes compare?
+- Which branches perform best?
+
+## Pages
+
+### 1. Revenue Overview
+Total revenue, total invoices, and average invoice value, broken down by branch, scheme, clinic, and time.
+
+| Visual | Shows |
+|---|---|
+| Revenue by Branch | Revenue split across branches |
+| Revenue by Scheme | Revenue split across insurance schemes |
+| Revenue Trend by Date | Revenue over time |
+| Revenue by Clinic | Revenue share per clinic |
+
+Filters: Branch, Invoice Date
+
+### 2. Patient Demographics
+Total patients, average age, and total revenue, with patient volume by clinic, scheme, and branch, plus revenue mix by credit company.
+
+| Visual | Shows |
+|---|---|
+| Patient Count by Clinic | Where patients are seen |
+| Patient Count by Scheme | Which schemes patients use |
+| Patient Count by Branch | Patient volume per branch |
+| Revenue Mix by Credit Company | Revenue share per credit company |
+
+Filters: Invoice Date, Branch
+
+### 3. Clinic and Scheme
+Total revenue, total invoices, and average age, with revenue compared across clinics and schemes.
+
+| Visual | Shows |
+|---|---|
+| Revenue by Clinic | Revenue per clinic |
+| Revenue by Scheme | Revenue per scheme |
+| Total Revenue Gauge | Revenue against target |
+| Patient Split by Credit Co | Patient share per credit company |
+
+Filters: Clinic, Credit Company
+
+### 4. Branch Performance
+Total revenue, total invoices, and average revenue per branch, with revenue trend and patient distribution by branch.
+
+| Visual | Shows |
+|---|---|
+| Revenue by Branch | Revenue per branch |
+| Revenue by Scheme | Revenue per scheme, per branch |
+| Revenue Trend | Revenue over time |
+| Patients by Branch | Patient share per branch |
+
+Filters: Branch
+
+## Data model
+
+| Table | Role | Key fields |
+|---|---|---|
+| OP Billing Report | Fact table | Clinic, Credit Company, Invoice Date |
+| Branch | Dimension | Branch name |
+| Scheme | Dimension | Scheme name |
+| Age | Measure source | Patient age |
+| Invoice Amount | Measure source | Total amount |
+
+Core measures: sum, count, and average of invoice amount and age.
+
+## Tools
+
+Power BI Desktop, DAX, Power Query.
+
+## How to open
+
+1. Download `Nairobi_Womens_Hospital.pbix`
+2. Open it in Power BI Desktop
+3. Use the slicers on each page to filter by branch, date, clinic, or credit company
+
+## File
+
+`Nairobi_Womens_Hospital.pbix`
+
+# PROJECT 2: Medical Center Analysis
 
 This repository contains scripts for analyzing medical center visit data. The analysis is focused on several key questions related to patient visits and diagnoses at various medical centers from May 2022 to September 2022. The analyses are performed using R with the `readxl` package for reading Excel files and base R functions for data manipulation and calculation.
 
@@ -8,7 +96,6 @@ This repository contains scripts for analyzing medical center visit data. The an
 3. [How many unique patients experienced a blended healthcare approach in 2022?](#3-how-many-unique-patients-experienced-a-blended-healthcare-approach-in-2022)
 4. [How many unique values are there in the 'PatientCode' column of the 'KU' data frame that are not repeated?](#4-how-many-unique-values-are-there-in-the-patientcode-column-of-the-ku-data-frame-that-are-not-repeated)
 5. [What percentage of visits in April 2022 happened within 30 days of the preceding visit by the same patient?](#5-what-percentage-of-visits-in-april-2022-happened-within-30-days-of-the-preceding-visit-by-the-same-patient)
-<img width="790" height="519" alt="image" src="https://github.com/user-attachments/assets/9f7c3bfa-6848-4037-be41-bf3beb852184" />
 
 ## Requirements
 - R
