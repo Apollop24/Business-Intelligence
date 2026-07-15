@@ -8,6 +8,7 @@ This repository contains scripts for analyzing medical center visit data. The an
 3. [How many unique patients experienced a blended healthcare approach in 2022?](#3-how-many-unique-patients-experienced-a-blended-healthcare-approach-in-2022)
 4. [How many unique values are there in the 'PatientCode' column of the 'KU' data frame that are not repeated?](#4-how-many-unique-values-are-there-in-the-patientcode-column-of-the-ku-data-frame-that-are-not-repeated)
 5. [What percentage of visits in April 2022 happened within 30 days of the preceding visit by the same patient?](#5-what-percentage-of-visits-in-april-2022-happened-within-30-days-of-the-preceding-visit-by-the-same-patient)
+<img width="790" height="519" alt="image" src="https://github.com/user-attachments/assets/9f7c3bfa-6848-4037-be41-bf3beb852184" />
 
 ## Requirements
 - R
